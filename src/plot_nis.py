@@ -19,10 +19,17 @@ lidar_nis.pop(0)
 
 plt.plot(radar_nis)
 plt.plot(np.array([7.8 for i in range(len(radar_nis))]))
-plt.show()
+plt.xlabel('sample')
+plt.ylabel('NIS value')
+plt.title('RADAR NIS')
+plt.savefig('radar_nis.png')
+plt.clf()
 
 plt.plot(lidar_nis)
 plt.plot(np.array([5.9 for i in range(len(lidar_nis))]))
-plt.show()
+plt.xlabel('sample')
+plt.ylabel('NIS value')
+plt.title('LIDAR NIS')
+plt.savefig('lidar_nis.png')
 
 
